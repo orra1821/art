@@ -1,0 +1,33 @@
+<script>
+const artworks = [
+  {src: "diluvial-elevations-and-depressions.jpg", title: "Diluvial Elevations and Depressions"},
+  {src: "hydra-viridis.jpg", title: "Hydra Viridis"},
+  {src: "invertebrate-fossils.jpg", title: "Invertebrate Fossils"},
+  {src: "junction-of-granite-and-limestone.jpg", title: "Junction of Granite and Limestone"},
+  {src: "plesiosaurus-skeleton.jpg", title: "Plesiosaurus"},
+  {src: "coal-basin-ashby-wolds.jpg", title: "Coal Basin"},
+  {src: "crust-of-the-earth.jpg", title: "Crust of the Earth"},
+  {src: "ichthyosaurus-skeleton.jpg", title: "Ichthyosaurus"},
+  {src: "nautilus-shell.jpg", title: "Nautilus Shell"},
+  {src: "octopus2.jpg", title: "Octopus Study II"},
+  {src: "fourteen-invertebrate-organisms.jpg", title: "Microscopic Organisms"},
+  {src: "great-geyser-iceland.jpg", title: "Great Geyser"},
+  {src: "megatherium-skeleton.jpg", title: "Megatherium"},
+  {src: "octopus1.jpg", title: "Octopus Study I"},
+  {src: "palaeotherium-magnum.jpg", title: "Palaeotherium"},
+  {src: "five-lines-of-ornithichnites.jpg", title: "Ornithichnites Tracks"},
+  {src: "granite-veins-in-mica-slate.jpg", title: "Granite Veins"},
+  {src: "mastodon-maximus-skeleton.jpg", title: "Mastodon"},
+  {src: "octopus-devouring-a-ship.jpg", title: "The Kraken"},
+  {src: "rocking-stone-blue-hills.jpg", title: "Rocking Stone"}
+];
+
+function assignArt() {
+  const random = artworks[Math.floor(Math.random() * artworks.length)];
+  document.getElementById("artImage").src = random.src;
+  document.getElementById("title").innerText = random.title;
+}
+
+// INSTANT ASSIGNMENT ON PAGE LOAD
+window.onload = assignArt;
+</script>
