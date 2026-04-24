@@ -1,3 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orra’s Assignment</title>
+
+  <style>
+    body {
+      font-family: Georgia, serif;
+      text-align: center;
+      background: #f5f1e8;
+      padding: 40px;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 20px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Your Assigned Specimen</h1>
+
+<p><em>
+A specimen has been entrusted to your study.  
+Reproduce it faithfully.
+</em></p>
+
+<!-- THESE TWO LINES ARE CRITICAL -->
+<img id="artImage" src="">
+<p id="title"></p>
+
 <script>
 const artworks = [
   {src: "diluvial-elevations-and-depressions.jpg", title: "Diluvial Elevations and Depressions"},
@@ -28,6 +64,8 @@ function assignArt() {
   document.getElementById("title").innerText = random.title;
 }
 
-// INSTANT ASSIGNMENT ON PAGE LOAD
 window.onload = assignArt;
 </script>
+
+</body>
+</html>
